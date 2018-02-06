@@ -3,10 +3,48 @@
   <head lang="ja">
   <meta charset="UTF-8">
   <title></title>
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/stylesheet.css" charset="utf-8" />
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
 </head>
 <body>
+	<header class="header">
+		<a><i class="fab fa-facebook header-facebook-icon"></i></a>
+		<div class="header-search-box">
+			<input class="header-search" type="search"　placeholder="検索">
+			<input class="header-submit" type="submit" value="　　">
+			<i class="fas fa-search header-search-icon"></i>
+		</div>
+		<nav class="header-nav">
+			<div class="header-nav-left">
+				<div class="header-nav-me">
+					<i class="fas fa-user header-nav-me-icon"></i>
+					<p class="header-nav-me-name">マイネーム</p>
+				</div>
+				<div class="header-nav-home">
+					<p>ホーム</p>
+				</div>
+				<div class="header-nav-search">
+					<p>友達を検索</p>
+				</div>
+			</div>
+			<div class="header-nav-right">
+				<div class="header-nav-right-left">
+					<i class="fas fa-users"></i>
+					<i class="fas fa-comment"></i>
+					<i class="fas fa-globe"></i>
+				</div>
+				<div class="header-nav-right-right">
+					<i class="fas fa-question-circle"></i>
+					<i class="fas fa-caret-down"></i>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<aside class="left-aside"></aside>
+	<main class="main"></main>
+	<aside class="right-aside"></aside>
 </body>
 </html>
