@@ -1,24 +1,34 @@
+body{
+  width: 100vw;
+  height: auto;
+}
+
+.header,
+.home-left-aside,
+.home-friends{
+  position: fixed;
+}
+
 .header{
   background-color: #4267b2;
   width: 100%;
-  height: 5.3vh;
+  height: 42.4px;
   display: flex;
   align-items: center;
-  z-index: -10;
 }
 
 .header-facebook-icon{
   color: #fff;
-  font-size: 3.4vh;
-  margin-left: 2vw;
+  font-size: 27.2px;
+  margin-left: 1.5vw;
 }
 
 .header-search-box{
   position: relative;
   width: 450px;
-  height: 3vh;
+  height: 24px;
   border: solid 1px #3b5998;
-  border-radius: 3px;
+  border-radius: 2px;
   margin-left: 12.9px;
 }
 
@@ -32,6 +42,7 @@
   height: 100%;
   border: none;
   padding: 0;
+  outline: none;
 }
 
 .header-submit{
@@ -62,10 +73,10 @@
 }
 
 .header-nav-left > div{
-  height: 3vh;
+  height: 24px;
   padding: 0 13px;
   border-left: solid 1px #365899;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 .header-nav-left > div > p{
@@ -107,14 +118,84 @@
   border-right: solid 1px #365899;
 }
 
+.header-nav-right > div > i:hover{
+  color: #000;
+}
+
 .header-nav-right-left > i{
   margin: 0 3px;
 }
 
-.header-nav-right-left > i:hover{
-  color: #000;
-}
-
 .header-nav-right-right{
   margin-left: 10px;
+}
+
+.home{
+  background-color: #e9ebee;
+  width: 100%;
+  height: 100vh;
+  z-index: -999;
+}
+
+.home-left-aside{
+  margin-top: 57px;
+  margin-left: 1.5vw;
+  width: 180px;
+  height: 700px;
+}
+
+.home-left-aside > div{
+  margin-bottom: 10px;
+}
+
+.home-left-aside p{
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #4b4f56;
+}
+
+.home-left-aside li{
+  width: 100%;
+  height: 27px;
+  font-size: 13px;
+  line-height: 26px;
+  border-radius: 2px;
+  
+  display: flex;
+  align-items: center;
+  transition: background-color 0.4s, border 0.4s;
+
+}
+
+.home-left-nav-icon{
+  width: 25px;
+  font-size: 1.3em;
+  padding-left: 5px;
+}
+
+.home-left-aside span{
+  /*margin-right: 25px;*/
+}
+
+.dots{
+  font-size: 1.2em;
+  color: #929598;
+  /*float: right;*/
+}
+
+.home-left-aside li:not(.home-left-aside-now):hover{
+  border: 1px solid #dddfe2;
+  background-color: #f6f7f9;
+  margin: -1px;
+/*  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;*/
+  transition: background-color 0.2s;
+}
+
+.home-left-aside-now{
+  border: 1px solid #dddfe2;
+  background-color: #f6f7f9;
+  font-weight: bold;
 }

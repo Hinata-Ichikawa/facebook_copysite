@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/stylesheet.css" charset="utf-8" />
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.balloon.min.js"></script>
+  <script src="js/jquery.placeholder.min.js"></script>
   <script src="js/script.js"></script>
 </head>
 <body>
@@ -43,8 +45,44 @@
 			</div>
 		</nav>
 	</header>
-	<aside class="left-aside"></aside>
-	<main class="main"></main>
-	<aside class="right-aside"></aside>
+	<div class="home">
+		<aside class="home-left-aside">
+			<div>
+				<ul>
+					<li><i class="fas fa-user home-left-nav-icon"></i>マイネーム<i class="fas fa-ellipsis-h dots"></i></li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li class="home-left-aside-now"><i class="far fa-newspaper home-left-nav-icon"></i><span>ニュースフィード</span><i class="fas fa-ellipsis-h dots"></i></li>
+					<li><i class="fas fa-comment home-left-nav-icon"></i>Messenger</li>
+				</ul>
+			</div>
+			<div class="home-left-aside-shortCut">
+				<p>ショートカット</p>
+				<ul>
+					<li>NCUkeion部員ページ</li>
+				</ul>
+			</div>
+			<div class="home-left-aside-discover">
+				<p>発見</p>
+				<ul>
+					<li>イベント</li>
+					<li>Marketplace</li>
+					<li>Facebookページ</li>
+					<li>グループ</li>
+					<li>友達を検索</li>
+					<li>友達一覧</li>
+					<li>過去のこの日</li>
+					<li>ページフィード</li>
+					<li>写真</li>
+					<li>ゲーム</li>
+				</ul>
+			</div>
+		</aside>
+		<main class="home-main"></main>
+		<aside class="home-right-aside"></aside>
+		<div class="home-friends"></div>
+	</div>
 </body>
 </html>
