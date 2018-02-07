@@ -18,4 +18,15 @@ $(function() {
 	// $('nav-detail' + index).removeClass("nav-detail-hovered");
 
 	});
+
+	$('.home-left-aside li').hover(function(){
+
+		// $(this).find('.dots').css({'visibility' : 'visible'});
+		$(this).find('.dots').not('.dots-add').css({'visibility' : 'visible'});
+
+	}, function(){
+
+		$(this).find('.dots').not('.dots-add').css({'visibility' : 'hidden'});
+
+	});
 });

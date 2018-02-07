@@ -145,7 +145,7 @@ body{
 }
 
 .home-left-aside > div{
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .home-left-aside p{
@@ -181,7 +181,13 @@ body{
 .dots{
   font-size: 1.2em;
   color: #929598;
-  /*float: right;*/
+  margin-left: auto;
+  margin-right: 5px;
+  visibility: hidden;
+}
+
+.dots-add{
+  visibility: visible;
 }
 
 .home-left-aside li:not(.home-left-aside-now):hover{
@@ -199,3 +205,4 @@ body{
   background-color: #f6f7f9;
   font-weight: bold;
 }
+
